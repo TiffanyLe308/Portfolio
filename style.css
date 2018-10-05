@@ -21,7 +21,7 @@ body, html {
     -moz-animation: 200ms linear;
     -o-animation: 200ms linear;
     animation: 200ms linear;
-    margin-top: -6.5rem;
+    margin-top: -14.5rem;
 }
 
 .background-split {
@@ -49,12 +49,16 @@ body, html {
   z-index: 1030;
 }
 
+.navbar-brand img {
+  width: 200px;
+}
+
 .navbar .nav-item {
   padding: 0.5rem 1rem;
   margin-top: 1rem;
 }
 
-.navbar a {
+.navbar .nav-item a {
   color: #b25f5c;
   text-transform: capitalize;
   font-size: 25px;
