@@ -1,16 +1,22 @@
 
+/* -----GeneralStyles----- */
+
 body, html {
     margin: 0;
     padding: 0;
-    position: fixed;
+    position: relative;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: black;
+    overflow-x: hidden;
 }
 
+.page-mt {
+  margin-top: 13rem;
+}
+
+.page-mb {
+  margin-bottom: 2rem;
+}
 
 /* -----Navbar----- */
 
@@ -48,24 +54,24 @@ body, html {
 
 .background {
     background-color: #ECE9E8;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     -webkit-animation: 200ms linear;
     -moz-animation: 200ms linear;
     -o-animation: 200ms linear;
     animation: 200ms linear;
-    margin-top: -12.25rem;
+    /* margin-top: -12.25rem; */
 }
 
 .background-split {
     display: flex;
     flex-flow: row;
     width: 50vw;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     margin: 0;
     right: 100vw;
-    background-color: #DBB1A4;
+    background-color: #F2BE54;
     -webkit-animation: headerSlide 2s ease-in-out 0.25s 1 forwards;
     animation: headerSlide 2s ease-in-out 0.25s 1 forwards;
 }
@@ -121,6 +127,164 @@ body, html {
   position: relative;
 }
 
+/* ==== Split screen styles ==== */
+.split-screen-container {
+	height: 500px;
+	width: 100%;
+	position: relative;
+	top: 50px;
+	background-color: #000;
+}
+
+.split-screen-container .split-screen-left, .split-screen-container .split-screen-right {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #153E5C;
+}
+
+.split-screen-container .split-screen-left {
+  left: -50%;
+}
+
+.split-screen-container .split-screen-right {
+  right: -50%;
+}
+
+.split-screen-container .inner-split-right, .split-screen-container .inner-split-left {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.split-screen-container .image-1-initial, .split-screen-container .image-1-transition, .split-screen-container .image-2-initial, .split-screen-container .image-2-transition {
+	width: 360px;
+	height: 360px;
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+.split-screen-container .image-1-initial, .split-screen-container .image-2-initial {
+    z-index: 10;
+    opacity: 1;
+}
+
+.split-screen-container .image-1-transition, .split-screen-container .image-2-transition {
+    z-index: 9;
+    opacity: 0;
+}
+
+.split-screen-container #profile-1-text, .split-screen-container #profile-2-text {
+    background-color: #5B8991;
+}
+
+.split-screen-container img {
+    width: 360px;
+    height: 360px;
+}
+
+.split-screen-container h1 {
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font-weight: 400;
+    color: #f2be54;
+    font-family: 'Fira Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.split-screen-container h2 {
+     color: #fdc029;
+     text-align: center;
+     font-weight: 400;
+     margin-bottom: 3rem;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+}
+
+.split-screen-container p {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.45;
+    font-weight: 300;
+    margin: 2rem 0;
+}
+
+ .split-screen-container .see-more {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #f2be54;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 90px;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.split-screen-container .see-more:hover {
+     background-color: #f2be54;
+     color: #153e5c;
+     font-weight: 600;
+}
+
+.split-screen-container .text-container {
+     max-width: 40rem;
+     margin: 3rem auto;
+}
+
+.split-screen-container .close {
+    position: absolute;
+    top: 0;
+    color: #fdc029;
+    transition: all .2s linear;
+    z-index: 11;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: none;
+    opacity: 0.8;
+}
+
+.split-screen-container .close:hover {
+     color: #153e5c !important;
+     opacity: 1;
+}
+
+.split-screen-container .close-left{
+    left: 1.2rem;
+}
+
+.split-screen-container .close-right{
+    right: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ----------MediaQuerries---------- */
 
 @media (max-width: 579px) {
@@ -130,15 +294,19 @@ body, html {
     .navbar-brand img {
       width: 150px;
     }
-    
+
     #collapseNavbar {
       padding-top: 4rem;
     }
 
     /* -----TextRunning----- */
 
+    .text-running {
+      top: 40%;
+    }
+
     .text-running h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       line-height: 3.5rem;
     }
 
@@ -213,7 +381,7 @@ body, html {
       top: 0;
       right: 0;
       left: 0;
-      min-height: 100%;
+      min-height: 100vh;
       z-index: 1031;
       -webkit-transition: all 0.4s ease;
       -o-transition: all 0.4s ease;
@@ -226,7 +394,9 @@ body, html {
     }
 
     .navbar-flex {
-      display: inline-flex;
+      float: right;
+      margin-top: 3.5rem;
+      padding-right: 0 !important;
     }
 
     .navbar-collapse.collapsing {
