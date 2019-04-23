@@ -5,6 +5,8 @@ import Portfolio from './components/portfolio/portfolio';
 import ContactMe from './components/contact-me/contact-me';
 import Footer from './components/footer/footer';
 
+
+
 class App extends Component {
   render() { 
     return (
@@ -13,7 +15,8 @@ class App extends Component {
         <AboutMe />
         <Portfolio />
         <ContactMe />
-      </div>
+        <Footer />
+      </div> 
     );
   }
 }
