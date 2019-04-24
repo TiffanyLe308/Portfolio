@@ -1,0 +1,26 @@
+
+/* ------------------------------------------------------------------ */
+/* General Styles
+/* ------------------------------------------------------------------ */
+
+body { background: #0f0f0f; }
+
+.info {
+    font: 16px/24px 'librebaskerville-italic', serif;
+    color: #6E7881;
+    margin-bottom: 18px;
+    margin-top: 9px;
+}
+
+a {
+    color: #CFA12F !important;
+}
+
+a:hover, a:focus, a:active {
+    color: #e8d7b4 !important;
+    text-decoration: none !important;
+}
+
+hr {
+    border-bottom: 1px solid #CFA12F !important;
+}

@@ -3,88 +3,54 @@ import React, { Component } from 'react';
 export default class AboutMe extends Component {
     render() {
         return (
-            <section id="about">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
-                            <h2>About Me</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam</p>
-                        </div>
-                    </div>
-
-                    <div className="row">
-                        <div className="col-md-6">
-                            <h2>Contact Details</h2>
-                            <p className="address">
-                                <span>Jonathan Doe</span><br />
-                                <span>1600 Amphitheatre Parkway<br />
-                                    Mountain View, CA 94043 US
-                                </span><br />
-                                <span>(123)456-7890</span><br />
-                                <span>anyone@website.com</span>
-                            </p>
-                        </div>
-                        <div className="col-md-6 download">
-                            <p>
-                                <a href="#" className="button"><i className="fa fa-download" />Download Resume</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                {/* <div className="row">
-                    <div className="three columns">
-                        <img className="profile-pic" src="images/profilepic.jpg" alt />
-                    </div>
-                    <div className="nine columns main-col">
-                        <h2>About Me</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-                    </p>
+            <div>
+                <section id="about">
+                    <div className="container">
                         <div className="row">
-                            <div className="columns contact-details">
-                                <h2>Contact Details</h2>
-                                <p className="address">
-                                    <span>Jonathan Doe</span><br />
-                                    <span>1600 Amphitheatre Parkway<br />
-                                        Mountain View, CA 94043 US
-                                </span><br />
-                                    <span>(123)456-7890</span><br />
-                                    <span>anyone@website.com</span>
-                                </p>
+                            <div className="col-md-12">
+                                <h3>About Me</h3>
+                                <p>I am a conscientious person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills and eager to learn from others.
+                            I am able to take on the responsibility to work both independently or as a part of a team, and have the enthusiasm as well as determination to ensure that I make a success of it.</p>
                             </div>
-                            <div className="columns download">
+                        </div>
+
+                        <div className="row mt-4">
+                            <div className="col-md-6">
+                                <h3>Contact Details</h3>
+                                <p className="address">
+                                    <span>Tiffany Le</span><br />
+                                    <span>tiffanyle308@gmail.com</span>
+                                </p>
+                                <div className="download">
+                                    <p>
+                                        <a href="#" className="button"><i className="fa fa-download" />Download Resume</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-md-6 download">
                                 <p>
-                                    <a href="#" className="button"><i className="fa fa-download" />Download Resume</a>
+                                    Or you can send me message here <a href="#" className="button"><i className="fa fa-envelope mr-0" /></a>
                                 </p>
                             </div>
                         </div>
                     </div>
-                </div> */}
+                </section>
 
                 <section id="resume">
                     <div className="container">
                         <div className="row education">
-                            <div className="col-md-3 header-col">
-                                <h1>
+                            <div className="col-md-3">
+                                <h3>
                                     <span>Education</span>
-                                </h1>
+                                </h3>
                             </div>
-                            <div className="col-md-9 main-col">
+                            <div className="col-md-9">
                                 <div className="row item">
                                     <div className="col-md-12">
                                         <h3>Arcada University of Applied Science</h3>
                                         <p className="info">Bachelor's Degree in BIT
                                     <span>•</span>
-                                            <em className="date">Graduate December 2013</em>
-                                        </p>
-                                        <p>
-                                            I am a conscientious person who works hard and pays attention to detail. I'm flexible, quick to pick up new skills and eager to learn from others.
-                                            I am able to take on the responsibility to work both independently or as a part of a team, and have the enthusiasm as well as determination to ensure that I make a success of it.
+                                            <em className="date">Graduated December 2013</em>
                                         </p>
                                     </div>
                                 </div>
@@ -94,16 +60,16 @@ export default class AboutMe extends Component {
 
                     <div className="container">
                         <div className="row work">
-                            <div className="col-md-3 header-col">
-                                <h1>
+                            <div className="col-md-3">
+                                <h3>
                                     <span>Work</span>
-                                </h1>
+                                </h3>
                             </div>
-                            <div className="col-md-9 main-col">
+                            <div className="col-md-9">
                                 <div className="row item">
                                     <div className="col-md-12 columns">
                                         <h3>Fellow Finance Oy</h3>
-                                        <p className="info">Front-end Developer
+                                        <p className="info">Frontend Developer
                                     <span>•</span>
                                             <em className="date">May 2017 - Present</em>
                                         </p>
@@ -119,8 +85,8 @@ export default class AboutMe extends Component {
 
                                 <div className="row item">
                                     <div className="col-md-12 columns">
-                                        <h3>Aido</h3>
-                                        <p className="info">Front-end Developer
+                                        <h3 className="mt-3">Aido</h3>
+                                        <p className="info">Frontend Developer
                                     <span>•</span>
                                             <em className="date">November 2018 - Present</em>
                                         </p>
@@ -133,7 +99,7 @@ export default class AboutMe extends Component {
 
                                 <div className="row item">
                                     <div className="col-md-12 columns">
-                                        <h3>Goly</h3>
+                                        <h3 className="mt-3">Goly</h3>
                                         <p className="info">Junior Frontend Developer
                                     <span>•</span>
                                             <em className="date">November 2018 - Present</em>
@@ -151,12 +117,12 @@ export default class AboutMe extends Component {
 
                     <div className="container">
                         <div className="row skill">
-                            <div className="col-md-3 header-col">
-                                <h1>
+                            <div className="col-md-3">
+                                <h3>
                                     <span>Skills</span>
-                                </h1>
+                                </h3>
                             </div>
-                            <div className="col-md-9 main-col">
+                            <div className="col-md-9">
                                 <p>I enjoy being challenged and working on projects that require me to work outside my comfort and knowledge to learn new programming languages and frameworks.
                                     Coding is my hobby which I enjoy to waste time on every now and then.
                                 </p>
@@ -171,19 +137,19 @@ export default class AboutMe extends Component {
                                             <em>CSS3</em>
                                         </li>
                                         <li>
-                                            <span className="bar-expand wordpress" />
+                                            <span className="bar-expand jquery" />
                                             <em>jQuery</em>
                                         </li>
                                         <li>
-                                            <span className="bar-expand illustrator" />
+                                            <span className="bar-expand react" />
                                             <em>React</em>
                                         </li>
                                         <li>
-                                            <span className="bar-expand photoshop" />
+                                            <span className="bar-expand csharp" />
                                             <em>C#</em>
                                         </li>
                                         <li>
-                                            <span className="bar-expand jquery" />
+                                            <span className="bar-expand wordpress" />
                                             <em>Wordpress</em>
                                         </li>
                                     </ul>
@@ -191,9 +157,9 @@ export default class AboutMe extends Component {
                             </div>
                         </div>
                     </div>
-
+                    <hr />
                 </section>
-            </section>
+            </div>
         );
     }
 }

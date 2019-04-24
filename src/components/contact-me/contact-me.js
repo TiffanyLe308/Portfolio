@@ -7,18 +7,10 @@ export default class ContactMe extends Component {
                 <section id="contact">
                     <div className="container">
                         <div className="row section-head">
-                            <div className="col-md-2 header-col">
-                                <h1><span>Get In Touch.</span></h1>
+                            <div className="col-md-2">
+                                <h2><span></span></h2>
                             </div>
                             <div className="col-md-10">
-                                <p className="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                                    voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                    </p>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-12">
                                 <form action method="post" id="contactForm" name="contactForm">
                                     <fieldset>
                                         <div>
@@ -51,6 +43,11 @@ export default class ContactMe extends Component {
                                 <div id="message-success">
                                     <i className="fa fa-check" />Your message was sent, thank you!<br />
                                 </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-md-12">
+
                             </div>
                         </div>
 
