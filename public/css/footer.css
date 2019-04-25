@@ -6,11 +6,7 @@
 #contact {
     background: #e8d7b4;
     padding-top: 50px;
-    padding-bottom: 40px;
-}
-
-#contact .section-head {
-    margin-bottom: 42px;
+    padding-bottom: 30px
 }
 
 #contact h2 {
@@ -49,7 +45,7 @@
 #contact label {
     font: 15px/24px 'opensans-bold', sans-serif;
     margin: 12px 0;
-    color: #CFA12F;
+    color: #3f4f49;
     display: inline-block;
     float: left;
     width: 26%;
@@ -59,7 +55,7 @@
     padding: 10px 20px;
     color: #373233;
     background: #CFA12F;
-    margin-bottom: 42px;
+    margin-bottom: 20px;
     border: 0;
     outline: none;
     font-size: 15px;
@@ -70,7 +66,7 @@
 
 #contact input:focus, #contact textarea:focus, #contact select:focus {
     color: #fff;
-    background-color: #11ABB0;
+    background-color: #4a665c;
 }
 
 #contact button.submit {
@@ -84,21 +80,21 @@
     display: inline-block;
     border-radius: 3px;
     margin-left: 26%;
+    padding: 5px 15px;
 }
 
 #contact button.submit:hover {
-    color: #0D0D0D;
-    background: #fff;
+    background: #3f4f49;
 }
 
 #contact span.required {
-    color: #373233;
+    color: #D72828;
     font-size: 13px;
 }
 
 #message-warning, #message-success {
     display: none;
-    background: #0F0F0F;
+    background: #3f4f49;
     padding: 24px 24px;
     margin-bottom: 36px;
     width: 65%;
@@ -110,7 +106,7 @@
 }
 
 #message-success {
-    color: #11ABB0;
+    color: #2f8464;
 }
 
 #message-warning i, #message-success i {
@@ -122,6 +118,33 @@
     position: relative;
     left: 18px;
     top: 17px;
+}
+
+/* Go To Top Button */
+
+#go-top {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+}
+
+#go-top a {
+    text-decoration: none;
+    text-align: center;
+    border: 0 none;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #3f4f49;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-size: 21px;
+    line-height: 55px;
+    border-radius: 100%;
 }
 
 /* Twitter Feed */
@@ -148,7 +171,7 @@
 /* Footer
 /* ------------------------------------------------------------------ */
 
-footer {
+/* footer {
     padding-top: 48px;
     color: #303030;
     font-size: 14px;
@@ -162,11 +185,11 @@ footer a, footer a:visited {
 
 footer a:hover, footer a:focus {
     color: #fff;
-}
+} */
 
 /* copyright */
 
-footer .copyright {
+/* footer .copyright {
     margin: 0;
     padding: 0;
 }
@@ -191,10 +214,10 @@ footer .copyright li:before {
 
 footer .copyright li:first-child:before {
     display: none;
-}
+}*/
 
 /* social links */
-
+/* 
 footer .social-links {
     margin: 18px 0 30px 0;
     padding: 0;
@@ -211,35 +234,5 @@ footer .social-links li {
 
 footer .social-links li:first-child {
     margin-left: 0;
-}
+} */
 
-/* Go To Top Button */
-
-#go-top {
-    position: absolute;
-    top: -24px;
-    left: 50%;
-    margin-left: -30px;
-}
-
-#go-top a {
-    text-decoration: none;
-    border: 0 none;
-    display: block;
-    width: 60px;
-    height: 60px;
-    background-color: #525252;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    color: #fff;
-    font-size: 21px;
-    line-height: 60px;
-    border-radius: 100%;
-}
-
-#go-top a:hover {
-    background-color: #0F9095;
-}

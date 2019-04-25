@@ -5,9 +5,12 @@
 
 body { background: #0f0f0f; }
 
+p {
+    font: 15px/24px 'librebaskerville-italic', sans-serif;
+}
+
 .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
+    color: #6a6d5e;
     margin-bottom: 18px;
     margin-top: 9px;
 }

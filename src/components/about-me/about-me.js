@@ -123,7 +123,7 @@ export default class AboutMe extends Component {
                                 </h3>
                             </div>
                             <div className="col-md-9">
-                                <p>I enjoy being challenged and working on projects that require me to work outside my comfort and knowledge to learn new programming languages and frameworks.
+                                <p className="info">I enjoy being challenged and working on projects that require me to work outside my comfort and knowledge to learn new programming languages and frameworks.
                                     Coding is my hobby which I enjoy to waste time on every now and then.
                                 </p>
                                 <div className="bars">
