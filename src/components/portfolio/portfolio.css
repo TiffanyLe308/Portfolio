@@ -55,7 +55,7 @@
    -moz-transition: opacity 0.3s ease-in-out;
    -o-transition: opacity 0.3s ease-in-out;
    transition: opacity 0.3s ease-in-out;
-   background: url(../images/overlay-bg.png) repeat;
+   background: url(/images/overlay-bg.png) repeat;
 }
 
 .portfolio-item .item-wrap .link-icon {
@@ -122,7 +122,7 @@
 }
 
 .modal .description-box h4 {
-   font: 15px/24px 'opensans-bold', sans-serif;
+   font: 16px/24px 'opensans-bold', sans-serif;
    margin-bottom: 12px;
 }
 

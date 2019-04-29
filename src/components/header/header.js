@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import './navbar-transition.js';
+
+import './header.css';
 
 export default class Header extends Component {
   render() {

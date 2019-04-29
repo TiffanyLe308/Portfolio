@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './about.css';
 
 export default class AboutMe extends Component {
     render() {
@@ -102,7 +103,7 @@ export default class AboutMe extends Component {
                                         <h3 className="mt-3">Goly</h3>
                                         <p className="info">Junior Frontend Developer
                                     <span>•</span>
-                                            <em className="date">November 2018 - Present</em>
+                                            <em className="date">June 2018 - Dec 2016</em>
                                         </p>
                                         <p><ul>
                                             <li>Supporting website maintenance and enhancements (work mainly with AngularJS, HTML5, Sass).</li>

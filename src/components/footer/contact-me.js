@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
+
+import './footer.css';
 
 export default class ContactMe extends Component {
     render() {
@@ -63,7 +66,23 @@ export default class ContactMe extends Component {
                                     <i className="fa fa-check" />Your message was sent, thank you!<br />
                                 </div>
 
-                                <div id="go-top"><a className="smoothscroll" title="Back to Top" href="#home"><i className="fa fa-chevron-up"></i></a></div>
+                                <div id="go-top">
+                                    <Link activeClass="active"
+                                        to="home"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
+                                        className="smoothscroll" title="Back to Top" href="#home"><i className="fa fa-chevron-up"></i></Link></div>
+
+                                {/* <div id="go-top">
+                                    <a activeClass="active"
+                                        to="section1"
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-70}
+                                        duration={500}
+                                        className="smoothscroll" title="Back to Top" href="#home"><i className="fa fa-chevron-up"></i></a></div> */}
 
                                 {/* <form action method="post" id="contactForm" name="contactForm">
                                     <fieldset>

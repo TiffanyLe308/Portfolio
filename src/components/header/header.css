@@ -6,9 +6,9 @@
 header {
    position: relative;
    height: 800px;
-   min-height: 500px;
+   min-height: 100vh;
    width: 100%;
-   background: #3f4f49 url(../images/notebook.jpg) no-repeat top center;
+   background: #3f4f49 url(/images/notebook.jpg) no-repeat top center;
    background-size: cover !important;
    -webkit-background-size: cover !important;
    text-align: center;
@@ -173,3 +173,22 @@ ul#nav li a:active {
 ul#nav li.current a {
    color: #F06000;
 }
+
+/* Solid class attached on scroll past first section */
+
+.navbar.solid {
+   background-color: #490D40;
+   transition: background-color 1s ease 0s;
+   box-shadow: 0 0 4px grey;
+ }
+
+ .navbar .navbar-brand {
+   color: #C57ED3;
+   transition: color 1s ease 0s;
+ }
+
+ .navbar-nav li a{
+   color: #C57ED3;
+   transition: color 1s ease 0s;
+
+ } 
