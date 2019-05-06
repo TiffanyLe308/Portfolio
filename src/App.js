@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/header/header';
 import AboutMe from './components/about-me/about-me';
-import Portfolio from './components/portfolio/portfolio';
+import PortfolioDemo from './components/portfolio/portfolio-demo';
 import Footer from './components/footer/footer';
 
 import './css/general.css';
@@ -13,7 +13,7 @@ class App extends Component {
       <div className="App">   
         <Header />
         <AboutMe />
-        <Portfolio />
+        <PortfolioDemo />
         <Footer />
       </div> 
     );
