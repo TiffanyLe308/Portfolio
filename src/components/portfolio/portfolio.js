@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PortfolioBusinessList from './portfolio-business-list';
+import {PortfolioBusinessList} from './portfolio-business-list';
 import PortfolioSearchBar from './portfolio-search-bar';
 
 import './portfolio.css';
