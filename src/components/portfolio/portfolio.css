@@ -1,14 +1,14 @@
 /* ------------------------------------------------------------------ */
 
-/* Portfolio Section
+/* Portfolio Demo Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#portfolio-demo {
    padding-top: 50px;
    padding-bottom: 80px;
 }
 
-#portfolio h2 {
+#portfolio-demo h2 {
    font: 35px/24px 'opensans-semibold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
@@ -187,69 +187,208 @@
 
 /* ------------------------------------------------------------------ */
 
-/* Call To Action Section
+/* Portfolio Section
 /* ------------------------------------------------------------------ */
 
-#call-to-action {
-   background: #212121;
-   padding-top: 66px;
-   padding-bottom: 48px;
+#portfolio input:focus {
+   outline: none;
+ }
+
+#portfolio .image-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   overflow: hidden;
+   background: #000;
+ }
+ 
+ #portfolio .image-container img {
+   width: 100%;
+ }
+
+/* HTML5 display-role reset for older browsers */
+#portfolio article, #portfolio aside, #portfolio details, #portfolio figcaption, #portfolio figure, 
+ #portfolio hgroup, #portfolio menu, nav, #portfolio section {
+  display: block;
 }
 
-#call-to-action h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 3px;
-   color: #fff;
+#portfolio ol, #portfolio ul {
+  list-style: none;
+}
+#portfolio blockquote, #portfolio q {
+  quotes: none;
 }
 
-#call-to-action h1 span {
-   display: none;
-}
+/* ------------------------------------------------------------------ */
 
-#call-to-action .header-col h1:before {
-   font-family: 'FontAwesome';
-   content: "\f0ac";
-   padding-right: 10px;
-   font-size: 72px;
-   line-height: 72px;
-   text-align: left;
-   float: left;
-   color: #fff;
-}
+/* Portfolio Business Section
+/* ------------------------------------------------------------------ */
 
-#call-to-action .action {
-   margin-top: 12px;
-}
+#portfolio-business {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 16.66rem;
+   margin: 0 .5rem 2.3rem .5rem;
+ }
+ 
+ #portfolio-business .image-container {
+   height: 16.66rem;
+   margin-bottom: 1rem;
+ }
+ 
+ #portfolio-business h2 {
+   margin-bottom: .5rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+ }
+ 
+ #portfolio-business .business-information {
+   display: flex;
+   justify-content: space-between;
+ }
+ 
+ #portfolio-business .business-information p {
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 1rem;
+ }
+ 
+ #portfolio-business .business-address {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+ }
+ 
+ #portfolio-business .business-reviews {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: right;
+ }
+ 
+ #portfolio-business .business-reviews h3 {
+   color: #CCA353;
+   font-weight: 600;
+   font-size: 15px;
+ }
+ 
+ #portfolio-business .business-reviews .business-rating {
+   font-size: .88rem;
+   line-height: 1rem;
+ }
 
-#call-to-action h2 {
-   font: 28px/36px 'opensans-bold', sans-serif;
-   color: #EBEEEE;
-   margin-bottom: 6px;
-}
+/* ------------------------------------------------------------------ */
 
-#call-to-action h2 a {
-   color: inherit;
-}
+/* Portfolio Business List Section
+/* ------------------------------------------------------------------ */
 
-#call-to-action p {
-   color: #636363;
-   font-size: 17px;
-}
+#portfolio-business-list {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   margin: 4.4rem 10%;
+ }
 
-/*#
-call-to-action .button {
-	color:#fff;
-   background: #0D0D0D;
-}
-*/
+/* ------------------------------------------------------------------ */
 
-#call-to-action .button:hover, #call-to-action .button:active {
-   background: #FFFFFF;
-   color: #0D0D0D;
-}
+/* Portfolio Search Bar Section
+/* ------------------------------------------------------------------ */
 
-#call-to-action p span {
-   font-family: 'opensans-semibold', sans-serif;
-   color: #D8D8D8;
-}
+#portfolio-search-bar .searchBar {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-image: url('../../images/portfolio/background_search_desktop.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 30rem;
+ }
+ 
+ #portfolio-search-bar .searchBar-sort-options ul {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+   padding-top: 2rem;
+   color: #ffffff;
+ }
+ 
+ #portfolio-search-bar .searchBar-sort-options li {
+   cursor: pointer;
+   border-bottom: 1px solid #fff;
+   padding: 0 2.58rem .33rem 2.58rem;
+   line-height: 1.13;
+   text-align: center;
+   font-weight: 600;
+   font-size: .83rem;
+   transition: color .25s;
+ }
+ 
+ #portfolio-search-bar .searchBar-sort-options li:hover {
+   color: #d4cfcf;
+ }
+ 
+ #portfolio-search-bar .searchBar-sort-options li.active,
+ #portfolio-search-bar .searchBar-sort-options li.active:hover {
+   border-bottom: 1px solid #f0c36c;
+   color: #f0c36c;
+ }
+ 
+ #portfolio-search-bar .searchBar-fields {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 2rem;
+ }
+ 
+ #portfolio-search-bar .searchBar-fields input {
+   width: 21rem;
+   padding: .66rem 1rem;
+   margin-right: 2rem;
+   border: 1px solid #fff;
+   border-radius: 4px;
+   font-size: .77rem;
+   font-weight: 500;
+ }
+ 
+ #portfolio-search-bar .searchBar-fields input:last-child {
+   margin-right: 0;
+ }
+ 
+ #portfolio-search-bar .searchBar-submit {
+   text-align: center;
+ }
+ 
+ #portfolio-search-bar .searchBar-submit a {
+   border-radius: 4px;
+   padding: .72rem 1.7rem;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 600;
+   transition: background-color .5s;
+ }
+ 
+ #portfolio-search-bar .searchBar-submit a:hover {
+   cursor: pointer;
+   background-color: #a7874b;
+ }
+ 
+ @media only screen and (max-width: 560px) {
+   #portfolio-search-bar .searchBar {
+     background-image: url('../../images/portfolio/background_search_mobile.jpg'); 
+   }
+ 
+   #portfolio-search-bar .searchBar-sort-options ul {
+     margin-left: 2rem;
+     margin-right: 2rem;
+   }
+ 
+   #portfolio-search-bar .searchBar-fields {
+     flex-direction: column;
+     align-items: center;
+   }
+ 
+   #portfolio-search-bar .searchBar-fields input {
+     margin-right: 0;
+     margin-bottom: .86rem;
+   }
+ }

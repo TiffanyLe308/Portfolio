@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 
 import App from './App';
-import Portfolio from './components/portfolio/portfolio-demo';
+import Portfolio from './components/portfolio/portfolio';
 
 import * as serviceWorker from './serviceWorker';
 
@@ -15,12 +15,12 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 const routing = (
     <Router>
         <div>
-            <nav id="nav-wrap" class="">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar">
+            <nav id="nav-wrap">
+                {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> */}
 
-                <div class="collapse navbar-collapse container show" id="navBar">
+                <div className="collapse navbar-collapse container show pl-0" id="navBar">
                     <ul id="nav" className="nav">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/portfolio">Portfolio</Link></li>

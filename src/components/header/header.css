@@ -123,6 +123,7 @@ header .scrolldown a {
    position: absolute;
    left: 0;
    top: 0;
+   background: rgba(0,0,0,.5);
 }
 
 .opaque {
@@ -136,7 +137,8 @@ header .scrolldown a {
 }
 
 ul#nav {
-   margin-top: 3rem;
+   padding-top: 0.6rem;
+   padding-bottom: 0.5rem;
    width: auto;
    text-align: center;
 }
