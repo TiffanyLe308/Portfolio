@@ -19,10 +19,14 @@ const business = {
 const businesses = [business, business, business, business, business, business, business, business, business];
 
 export default class Portfolio extends Component {
+    searchYelp(business, location, sortBy) {
+        console.log(`Searching Yelp with ${business}, ${location}, ${sortBy}`);
+    }
+
     render() {
         return (
             <section id="portfolio">
-                <PortfolioSearchBar />
+                <PortfolioSearchBar searchYelp={this.searchYelp}/>
                 <PortfolioBusinessList businesses={businesses} />
             </section>
         );
